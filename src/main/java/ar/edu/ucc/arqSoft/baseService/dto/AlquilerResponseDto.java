@@ -2,7 +2,7 @@ package ar.edu.ucc.arqSoft.baseService.dto;
 
 import java.util.Date;
 
-public class AlquilerResponseDto {
+public class AlquilerResponseDto implements DtoEntity{
 	
 	private Date fecha;
 	

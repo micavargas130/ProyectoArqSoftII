@@ -26,7 +26,7 @@ public class AlquilerServiceTest {
 		request.setPeliculaId((long) 1);
 		AlquilerResponseDto response = alquilerService.registrarAlquiler(request);
 		
-		Assert.assertEquals(1,response.getTitulo());
+		Assert.assertEquals("Los miserables",response.getTitulo());
 		return;
 	}
 

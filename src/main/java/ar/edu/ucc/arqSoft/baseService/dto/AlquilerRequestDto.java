@@ -1,8 +1,6 @@
 package ar.edu.ucc.arqSoft.baseService.dto;
 
-import java.sql.Date;
-
-public class AlquilerRequestDto {
+public class AlquilerRequestDto implements DtoEntity{
 
 		private Long socioId;
 		

@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.remoting.httpinvoker.AbstractHttpInvokerRequestExecutor;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -24,9 +25,13 @@ public class SocioServiceTest {
 	public void testInsert() {
 		SocioRequestDto request = new SocioRequestDto();
 		
+		 request.setNombre("Patricia");
+		 request.setApellido("Torres");
+		 request.setDni("17245869");
+		 request.setEmail("patricia@gmail.com");
 		SocioResponseDto response = socioService.registrarSocio(request);
 		
-		Assert.assertEquals("Pablo",response.getNombre());
+		Assert.assertEquals("Patricia", response.getNombre());
 		return;
 	}
 

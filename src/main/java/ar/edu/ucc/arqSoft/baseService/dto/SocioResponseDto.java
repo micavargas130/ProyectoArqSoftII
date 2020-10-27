@@ -1,6 +1,8 @@
 package ar.edu.ucc.arqSoft.baseService.dto;
 
-public class SocioResponseDto {
+import ar.edu.ucc.arqSoft.common.dto.DtoEntity;
+
+public class SocioResponseDto implements DtoEntity {
 	
 	private String nombre;
 	private String apellido;

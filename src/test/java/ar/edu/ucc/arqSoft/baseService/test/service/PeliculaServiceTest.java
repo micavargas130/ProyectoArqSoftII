@@ -22,9 +22,9 @@ public class PeliculaServiceTest {
 	public void testFindById() {
 		PeliculaResponseDto response = peliculaService.getPeliculaById((long) 2);
 		
-		Assert.assertEquals("Scary Movie", response.getTitulo());
+		Assert.assertEquals("El silencio de los inocentes", response.getTitulo());
 		return;
-	}
+	} 
 
 
 }
