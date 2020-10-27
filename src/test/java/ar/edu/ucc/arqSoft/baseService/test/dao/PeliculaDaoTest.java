@@ -30,7 +30,7 @@ public class PeliculaDaoTest {
 		logger.info("Test de busqueda de Pelicula por ID");
 		Pelicula pelicula = peliculaDao.load((long) 2);
 		
-		Assert.assertEquals("Scream", pelicula.getTitulo());
+		Assert.assertEquals("El silencio de los inocentes", pelicula.getTitulo());
 		return;
 	}
 	
@@ -40,7 +40,7 @@ public class PeliculaDaoTest {
 
 		logger.info("Test de Registro de Pelicula");
 		Pelicula pelicula = new Pelicula();
-		pelicula.setTitulo("El silencio de los inocentes");
+		pelicula.setTitulo("Rambo");
 
 		peliculaDao.insert(pelicula);
 		Assert.assertEquals(3, pelicula.getId().longValue());
@@ -50,7 +50,7 @@ public class PeliculaDaoTest {
 	@Test
 	public void testUpdate() {
 
-		logger.info("Test de actualización de State");
+		logger.info("Test de actualización de Pelicula");
 		Pelicula state = peliculaDao.load((long) 1);
 		state.setTitulo("Rambo");
 		peliculaDao.update(state);
@@ -64,7 +64,7 @@ public class PeliculaDaoTest {
 	@Test
 	public void testGetAll() {
 
-		logger.info("Test de busqueda de todos los States");
+		logger.info("Test de busqueda de todas las peliculas");
 		List<Pelicula> peliculas= peliculaDao.getAll();
 		Assert.assertNotNull(peliculas);
 		return;
