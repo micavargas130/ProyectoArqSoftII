@@ -8,6 +8,7 @@ public class SocioResponseDto implements DtoEntity {
 	private String apellido;
 	private String DNI;
 	private String email;
+	private Long id;
 	
 
 	public String getNombre() {
@@ -42,6 +43,13 @@ public class SocioResponseDto implements DtoEntity {
 		this.email = email;
 	}
 	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
 	
 
 }
