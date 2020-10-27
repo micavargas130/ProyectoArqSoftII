@@ -23,7 +23,7 @@ public class SocioDaoTest {
 	public void testFindById() {
 		Socio socio = socioDao.load((long) 1);
 
-		Assert.assertEquals("SANCHEZ", socio.getApellido().toUpperCase());
+		Assert.assertEquals("Vargas", socio.getApellido().toUpperCase());
 		return;
 	}
 
